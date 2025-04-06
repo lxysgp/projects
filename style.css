@@ -38,3 +38,14 @@ a.custom-link:hover {
   text-decoration-thickness: 3px;
   color: #fbff00;
 }
+img.zoom-hover {
+  width: 300px; /* base size */
+  max-width: 90%;
+  transition: transform 0.3s ease;
+  border-radius: 8px;
+}
+
+img.zoom-hover:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #00ffff; /* cyan glow */
+}
