@@ -9,6 +9,7 @@ body {
 
 h1 {
   font-size: 3em;
+  margin-bottom: 0.2em;
 }
 
 h2 {
@@ -16,14 +17,23 @@ h2 {
   margin-top: 2em;
 }
 
-p, li {
+p, em {
   font-size: 1.1em;
   margin: 0.5em 0;
+  color: #ccc;
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
+img.zoom-hover {
+  width: 300px;
+  max-width: 90%;
+  margin: 20px 10px;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+img.zoom-hover:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #00ffff;
 }
 
 a.custom-link {
@@ -36,16 +46,5 @@ a.custom-link {
 
 a.custom-link:hover {
   text-decoration-thickness: 3px;
-  color: #fbff00;
-}
-img.zoom-hover {
-  width: 300px; /* base size */
-  max-width: 90%;
-  transition: transform 0.3s ease;
-  border-radius: 8px;
-}
-
-img.zoom-hover:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0 15px #00ffff; /* cyan glow */
+  color: #ff00ff;
 }
