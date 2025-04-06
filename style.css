@@ -1,40 +1,67 @@
+/* Base styles for dark theme blog */
 body {
-  background-color: black;
-  color: white;
-  font-family: Consolas, 'Fira Code', 'Courier New', monospace;
-  text-align: center;
-  padding: 40px 20px;
-  margin: 0;
+  background-color: #000;       /* pure black background for hacker vibe */
+  color: #DDD;                  /* light gray text for less harsh contrast than pure white */
+  font-family: monospace;       /* monospace font for that terminal look */
+  font-size: 16px;              /* base font size ~16px for readability */
+  line-height: 1.6;             /* generous line spacing for readability */
+  max-width: 60ch;              /* limit line length to ~60 characters (ch = "0" width) */
+  margin: 2em auto;             /* center the content column with top/bottom margin */
+  padding: 0 1em;               /* small horizontal padding for mobile edges */
 }
 
-h1 {
-  font-size: 3em;
+/* Headings styling */
+h1, h2, h3, h4, h5, h6 {
+  color: #FFF;                 /* make headings a brighter white (stands out on gray text) */
+  line-height: 1.2;            /* tighter line-height for headings */
+  margin: 2em 0 1em;           /* add space above and below headings */
+}
+/* You can also vary font-size for headings, e.g., h1 { font-size: 2em; } etc. */
+
+/* Paragraphs */
+p {
+  margin: 1em 0;              /* space out paragraphs */
 }
 
-h2 {
-  font-size: 1.5em;
-  margin-top: 2em;
+/* Links */
+a {
+  color: #0f0;                /* bright green link color on black */
+  text-decoration: none;
+}
+a:hover, a:focus {
+  text-decoration: underline; /* underline on hover for clarity */
 }
 
-p, li {
-  font-size: 1.1em;
-  margin: 0.5em 0;
+/* Inline code in paragraphs */
+p code {
+  background: #333;           /* dark gray background for inline code */
+  color: #FFF;                /* keep text white for contrast */
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
+/* Code block styling */
+pre {
+  background: #333;           /* slightly lighter background for code blocks */
+  color: #FFF;                /* code text in white */
+  padding: 1em;               /* add padding around code block */
+  overflow-x: auto;           /* allow horizontal scroll for long code lines */
+}
+code {
+  font-family: monospace;
+  font-size: 0.95em;          /* slightly smaller text in code blocks if desired */
 }
 
-a.custom-link {
-  color: #00ffff;
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 3px;
-  transition: text-decoration-thickness 0.2s ease, color 0.2s ease;
+/* Blockquote styling */
+blockquote {
+  border-left: 4px solid #0f0; /* green bar to highlight quote (fits theme color) */
+  padding-left: 1em;
+  font-style: italic;
+  color: #BBB;                /* slightly dimmer text for quotes */
+  margin: 1.5em 0;
 }
 
-a.custom-link:hover {
-  text-decoration-thickness: 3px;
-  color: #fbff00;
+/* Additional elements */
+ul, ol {
+  margin: 1em 2em;           /* indent lists slightly and add vertical margin */
 }
