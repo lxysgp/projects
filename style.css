@@ -48,3 +48,12 @@ a.custom-link:hover {
   text-decoration-thickness: 3px;
   color: #ff00ff;
 }
+/* Make all post text white by default */
+.blog-post p {
+  color: white;
+}
+
+/* Only the intro line is gray */
+.intro-line {
+  color: #ccc;
+}
